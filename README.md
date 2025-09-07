@@ -27,7 +27,7 @@ This repository contains:
 ## Circuit Diagrams
 See `circuits/` folder for schematic and block diagrams
 
-## Pinout (as used in `smart3_IFTTT.ino` and `smartx.ino')
+## Pinout (as used in `smart3_IFTTT.ino` and  `smartx.ino`)
 The project uses Arduino-style D labels (match to your board). Update pins if your board differs.
 
 - IR_SENSOR_PIN = D4
