@@ -12,8 +12,8 @@ This repository contains:
 - `IR_test/IResp.ino` — IR sensor test.
 - `led_test/blink_esp.ino` — LED test.
 - `servo_test/servo_esp.ino` — Servo test.
-- `smart3_IFTTT/smart3_IFTTT.ino` — Full integration sketch that demonstrates Wi‑Fi, IFTTT notifications, servo, ultrasonic, IR, and LED logic.
-- `smartx/smartx.ino` — (additional project sketch, review in repo).
+- `smart3_IFTTT/smart3_IFTTT.ino` — Sketch that demonstrates Wi‑Fi, IFTTT notifications, servo, ultrasonic, IR, and LED logic.
+- `smartx/smartx.ino` — Full integration (main script).
 
 ## Hardware / Parts
 - ESP8266 development board (INVENT ONE, NodeMCU, or similar)
@@ -25,12 +25,9 @@ This repository contains:
 - Wires, breadboard, enclosure as required
 
 ## Circuit Diagrams
-See `circuits/` folder:
-- `BLOCK_DIAGRAM_SMART _WASTE_BIN.png`
-- `SMART_WASTE_BIN_BLOCK_DIAGRAM.pdf`
-- `schematic_smart_waste_bin.pdf`
+See `circuits/` folder for schematic and block diagrams
 
-## Pinout (as used in `smart3_IFTTT.ino`)
+## Pinout (as used in `smart3_IFTTT.ino` and ' `smartx.ino')
 The project uses Arduino-style D labels (match to your board). Update pins if your board differs.
 
 - IR_SENSOR_PIN = D4
@@ -52,13 +49,14 @@ Required Arduino libraries (install via Arduino Library Manager or PlatformIO):
 - (Optional) Blynk — if you plan to use Blynk dashboard features
 
 Primary sketches:
-- `smart3_IFTTT/smart3_IFTTT.ino` — combines sensors, servo, LED logic, counting people, and IFTTT notifications.
+- `smartx/smartx.ino` — combines sensors, servo, LED logic, counting people, and IFTTT notifications.
+- 'smart3_IFTTT/smart3_IFTTT.ino' - test IFTTT integrations
 - `IR_test/IResp.ino` — test IR sensor behavior.
 - `led_test/blink_esp.ino` — test LEDs.
 - `servo_test/servo_esp.ino` — test servo motion.
 
 ## Configuration — credentials & keys
-Open `smart3_IFTTT.ino` and set your credentials before uploading.
+Open `smartx.ino` and set your credentials before uploading.
 
 Replace placeholders with real values:
 
